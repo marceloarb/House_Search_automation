@@ -1,1 +1,2 @@
-com\marcelo\view\products\ProductsView.class
+com\marcelo\view\houses\HousesView.class
+com\marcelo\view\houses\UiHost.class
