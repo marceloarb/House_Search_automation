@@ -24,9 +24,19 @@ public class UiHost {
         return driver;
     }
 
+    public void waitOneSecond() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void load(String url){getDriver().get(url);}
 
     public WebElement getTitle() {
        return getDriver().findElement(By.id("title"));
     }
+    public WebElement getSelector(String selector){return getDriver().findElementByCssSelector(selector);}
+    public WebElement findByName (String selector){return getDriver().findElementByName(selector);}
 }
