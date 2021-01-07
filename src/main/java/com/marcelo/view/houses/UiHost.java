@@ -1,5 +1,7 @@
 package com.marcelo.view.houses;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class UiHost {
@@ -23,4 +25,8 @@ public class UiHost {
     }
 
     public void load(String url){getDriver().get(url);}
+
+    public WebElement getTitle() {
+       return getDriver().findElement(By.id("title"));
+    }
 }

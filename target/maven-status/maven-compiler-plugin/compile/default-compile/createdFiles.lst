@@ -1,2 +1,4 @@
+com\marcelo\view\houses\Application.class
 com\marcelo\view\houses\HousesView.class
 com\marcelo\view\houses\UiHost.class
+com\marcelo\view\houses\HousesViewExpected.class
