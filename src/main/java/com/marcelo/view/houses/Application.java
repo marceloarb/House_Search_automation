@@ -5,6 +5,6 @@ public class Application {
     public static void main (String[] args){
         HousesView housesView = HousesView.getInstance();
         housesView.load();
-        housesView.inserPrice();
+        housesView.insertPrice();
     }
 }

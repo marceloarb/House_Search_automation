@@ -11,7 +11,6 @@ public class HousesViewTests {
     public void smoke(){
         String expected = HousesViewExpected.getInstance().getLabel();
         String actual = HousesView.getInstance().getLabel();
-
         Assert.assertEquals(actual,expected);
     }
 }
