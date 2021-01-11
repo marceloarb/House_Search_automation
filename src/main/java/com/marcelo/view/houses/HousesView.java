@@ -25,8 +25,8 @@ public class HousesView {
        WebElement housePrice = uiHost.getSelector("#sidepane-header > div.StickyContainer-placeholder > div > div.exposedFilterForm.font-weight-roman > form > div > div.RangeSelect.quickPrice > span:nth-child(3) > span > span");
        housePrice.click();
        WebElement housePrices =  housePrice.findElement(new By.ByCssSelector("#sidepane-header > div.StickyContainer-placeholder > div > div.exposedFilterForm.font-weight-roman > form > div > div.RangeSelect.quickPrice > span:nth-child(3) > span > span > select"));
-       Select houseP = new Select(housePrices);
-       houseP.selectByIndex(2);
+       WebElement house = housePrices.findElement(new By.ByCssSelector("#sidepane-header > div.StickyContainer-placeholder > div > div.exposedFilterForm.font-weight-roman > form > div > div.RangeSelect.quickPrice > span:nth-child(3) > span > span > select > option:nth-child(13)"));
+       house.click();
 
 
     }
