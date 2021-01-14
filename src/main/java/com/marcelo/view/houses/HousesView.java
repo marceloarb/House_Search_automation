@@ -25,7 +25,8 @@ public class HousesView {
        WebElement housePrice = uiHost.getSelector("#sidepane-header > div.StickyContainer-placeholder > div > div.exposedFilterForm.font-weight-roman > form > div > div.RangeSelect.quickPrice > span:nth-child(3) > span > span");
        housePrice.click();
        Select house = new Select(housePrice.findElement(By.xpath("//*[@id=\"sidepane-header\"]/div[2]/div/div[1]/form/div/div[2]/span[3]/span/span/select")));
-        System.out.println(house.getOptions());
+       house.selectByIndex(13);
+       
        
     }
 
