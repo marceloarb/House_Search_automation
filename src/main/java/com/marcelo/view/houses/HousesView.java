@@ -26,7 +26,8 @@ public class HousesView {
        housePrice.click();
        Select house = new Select(housePrice.findElement(By.xpath("//*[@id=\"sidepane-header\"]/div[2]/div/div[1]/form/div/div[2]/span[3]/span/span/select")));
        house.selectByIndex(13);
-       
+       house.getOptions().get(13).click();
+
        
     }
 
