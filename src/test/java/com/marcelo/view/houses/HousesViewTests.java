@@ -9,8 +9,8 @@ import java.util.ArrayList;
 public class HousesViewTests {
     @Test
     public void smoke(){
-        String expected = HousesViewExpected.getInstance().getLabel();
-        String actual = HousesView.getInstance().getLabel();
+        HousesViewExpected expected = HousesViewExpected.getInstance();
+        HousesView actual = HousesView.getInstance();
         Assert.assertEquals(actual,expected);
     }
 }
